@@ -1,11 +1,10 @@
-const app = require('./app.ts');
-
+import app from "./app.ts"
 import config from './config/config.ts';
 import { connectToDatabase } from './db/main.ts';
 
 const startServer = async () => {
     try {
-        console.log("connect to the database")
+        console.log("trying to connect to the database")
         await connectToDatabase() 
         const PORT = config.port
         app.listen(PORT , ()=> {
