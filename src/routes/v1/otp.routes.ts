@@ -1,7 +1,7 @@
 import express from 'express';
-import { sendOtpFactory, verifyOtp } from '../controllers/otp.controller';
-import { NodemailerEmailService , EmailProvider } from '../services/NodemailerGmailService';
-import config from '../config/config';
+import { sendOtpFactory, verifyOtp } from '../../controllers/otp.controller';
+import { NodemailerEmailService , EmailProvider } from '../../services/NodemailerGmailService';
+import config from '../../config/config';
 
 const router = express.Router();
 
